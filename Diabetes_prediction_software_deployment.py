@@ -3,7 +3,7 @@ import pickle
 import streamlit as st
 
 # loading the saved model
-loaded_model = pickle.load(open('C:/Users/preet/OneDrive/Desktop/dbp/train_model.sav', 'rb'))
+loaded_model = pickle.load(open('C:/Users/preet/OneDrive/Desktop/dbp/trained_model.sav', 'rb'))
 
 st.set_page_config(page_title="A Data-Driven Approach for Diabetes Prediction", page_icon=":pill:", layout="wide")
 
