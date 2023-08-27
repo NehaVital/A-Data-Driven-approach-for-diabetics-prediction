@@ -60,12 +60,12 @@ def main():
         result = diabetes_prediction(
             [Pregnancies, Glucose, BloodPressure, SkinThickness, Insulin, BMI, DiabetesPedigreeFunction, Age])
         if result == True:
-            with open('index.html', 'r') as f:
+            with open('diabetic_result.html', 'r') as f:
                 html_string = f.read()
             # open the HTML file in a new page
             st.write(html_string, unsafe_allow_html=True)
         else:
-            with open('index_not.html', 'r') as f:
+            with open('nondiabetic_result.html', 'r') as f:
                 html_string = f.read()
             # open the HTML file in a new page
             st.write(html_string, unsafe_allow_html=True)
